@@ -8,12 +8,14 @@
 int main(void)
 {
 
-	_putchar('M');
-	_putchar('a');
-	_putchar('i');
-	_putchar('n');
-	_putchar('\n');
-
+	char *sh = "_putchar";
+	
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	
 	return (0);
 }
 
