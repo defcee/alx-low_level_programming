@@ -1,26 +1,32 @@
 #include "main.h"
 /**
- * main - Print 1-100, replace multiples of 3/5/both w/ Fizz/Buzz/FizzBuzz
+ * main - prints nultplies of 3 or 5
  *
+ * Description: multiples between 0 and 100
  * Return: 0
  */
 int main(void)
 {
-int n = 1;
-while (n <= 100)
+int i;
+for (i = 1; i <= 99; i++)
 {
-if (n % 3 == 0 && n % 5 == 0)
-printf("FizzBuzz");
-else if (n % 3 == 0)
-printf("Fizz");
-else if (n % 5 == 0)
-printf("Buzz");
-else
-printf("%d", n);
-if (n != 100)
-printf(" ");
-n++;
+if (i % 15 == 0)
+{
+printf("FizzBuzz ");
 }
-printf("\n");
+else if (i % 3 == 0)
+{
+printf("Fizz ");
+}
+else if (i % 5 == 0)
+{
+printf("Buzz ");
+}
+else
+{
+printf("%i ", i);
+}
+}
+printf("Buzz\n");
 return (0);
 }
