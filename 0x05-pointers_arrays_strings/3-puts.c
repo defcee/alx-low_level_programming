@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - put string
+ * _puts -main entry.
  * @str: first parameter
  *
  * Description: prints a string
