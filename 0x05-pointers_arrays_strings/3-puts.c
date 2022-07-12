@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _puts -main entry.
  * @str: first parameter
