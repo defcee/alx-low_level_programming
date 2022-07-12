@@ -6,23 +6,19 @@
  */
 void more_numbers(void)
 {
-char a, b, c, i;
-for (i = 0; i < 10; i++)
+int n, t;
+t = 0;
+while (t < 10)
 {
-for (c = 0; c <= 14; c++)
+n = 0;
+while (n < 15)
 {
-if (c < 10)
-b = c;
-else
-{
-a = c / 10i;
-}
-{
-b = c % 10;
-}
-_putchar('0' + a);
-}
-_putchar('0' + b);
+if (n > 9)
+_putchar(n / 10 + '0');
+_putchar(n % 10 + '0');
+n++;
 }
 _putchar('\n');
+t++;
+}
 }
