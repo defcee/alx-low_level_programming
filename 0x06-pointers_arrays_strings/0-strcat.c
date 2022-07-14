@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strings
+ * _strcat - concatenates two strings.
  * @dest: first input string
  * @src: second input
  * Description: appends the src string to the dest string
