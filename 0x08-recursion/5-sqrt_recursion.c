@@ -17,6 +17,12 @@ return (y);
 else
 return (find_square(x, y + 1));
 }
+/**
+ * _sqrt_recursion -main entry.
+ * @n:int
+ * Description:function that returns the natural square root of a number
+ * Return:void
+ */
 int _sqrt_recursion(int n)
 {
 return (find_square(n, 1));
