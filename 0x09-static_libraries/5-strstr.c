@@ -1,28 +1,27 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * _strstr - function locate
- * @haystack: pointer to char
- * @needle: pointer to char
- * Return: 0
+ * _strstr - description
+ * @haystack: string
+ * @needle: pointer
+ * Return: pointer
  */
 char *_strstr(char *haystack, char *needle)
 {
-while (*haystack)
+int i, j;
+for (i = 0; haystack[i] > '\0'; i++)
 {
-while (*needle)
+for (j = i; haystack[j] > '\0' && needle[j - i] > '\0'; j++)
 {
-if (*haystack++ != *needle++)
+if (haystack[j] != needle[j - i])
 {
 break;
 }
 }
-if (!*needle)
+if (needle[j - i] == '\0')
 {
-return (result);
+return (haystack + i);
 }
-needle = fneedle;
-result++;
-haystack = result;
 }
 return (0);
 }
